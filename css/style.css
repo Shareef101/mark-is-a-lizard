@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: sans-serif;
+}
+
+header {
+  text-align: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+header .container {
+  display: flex;
+  width: 95%;
+  padding-top: 1em;
+  justify-content: space-between;
+}
+
+header .container .image{
+  display: flex;
+  width: 80px;
+  align-items: center;
+}
+
+header .container img {
+  max-width: 100%;
+}
+
+.image span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#co-name {
+  color: black;
+}
+
+.nav{
+  display: flex;
+  gap: 120px;
+  align-items: center;
+}
+
+.nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1f476a;
+}
+
+.topButton{
+  padding-left: 20px;
+}
+
+.btnBlue {
+  display: inline-block;
+  background-color: #0081FB;
+  padding: 10px 30px;
+  border: #0081FB solid;
+  border-radius: 10px 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+}
+
+main .container {
+  display: flex;
+  width: 95%;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+#ceo {
+  color: #0081FB;
+}
+
+#iam {
+  padding: 0 6.25em;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.buttons {
+  margin-right: 50px;
+  padding: 20px 60px;
+  border: #0081FB solid;
+  border-radius: 10px 10px;
+  background-color: #0081FB;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.bottomButtons {
+  display: flex;
+  padding-top: 1.25em;
+  justify-content: center;
+  text-align: left;
+}
+
+#white-b {
+  color: #0018FB;
+  background-color: white;
+  box-shadow: 0 0 8px lightgray;
+  border-color: white;
+}
+
+.img-container{
+  position: relative;
+  clip-path: circle(44%);
+}
+
+
+#original-image{
+  width: 600px;
+  transition: opacity 0.3s ease;
+  clip-path: circle(44%);
+  opacity: 1;
+}
+
+.img-container:hover #original-image{
+  opacity: 0;
+
+}
+
+.hover-image{
+  position: absolute;
+  width: 600px;
+  left: 0;
+  clip-path: circle(44%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.img-container:hover .hover-image{
+ opacity: 1;
+}
+
+
+
+
+
+
